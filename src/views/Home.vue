@@ -58,7 +58,6 @@
       <!--LOADER-->
       <div v-if="loading" class="d-flex flex-column align-center pt-10">
         <v-avatar class="mb-4"
-          :image="wineColor === 'white' ? 'src/assets/white-drink.gif' : 'src/assets/red-drink.gif'"
           size="100"></v-avatar>
         <v-progress-circular indeterminate
           :color="wineColor === 'white' ? 'lime-darken-1' : 'red'"></v-progress-circular>
@@ -230,6 +229,7 @@ export default {
   bottom: 10px;
   right: 10px;
   font-weight: bold;
+  z-index: 999;
 }
 .btn_logout.red {
   color: white;
