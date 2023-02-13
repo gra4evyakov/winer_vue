@@ -44,7 +44,7 @@ export default {
                 localStorage.setItem('currentUser', this.login.toString())
                 let array = []
                 if (!localStorage.getItem(this.login.toString())) { localStorage.setItem(this.login.toString(), JSON.stringify(array)) }
-                this.$router.push('/')
+                this.$router.push('/winer_vue')
             }
             this.loading = true
             setTimeout(() => (this.loading = false), 2000)
